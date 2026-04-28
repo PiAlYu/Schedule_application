@@ -1,0 +1,21 @@
+﻿# Android
+android-app/.gradle/
+android-app/build/
+android-app/app/build/
+android-app/local.properties
+
+# Python server
+server/__pycache__/
+server/**/*.pyc
+server/.venv/
+server/.env
+server/schedule.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,79 @@
+﻿<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Calendar outer body -->
+    <path
+        android:fillColor="#F1F3F6"
+        android:pathData="M18,14h72c7.7,0 14,6.3 14,14v53c0,7.7 -6.3,14 -14,14h-72c-7.7,0 -14,-6.3 -14,-14v-53c0,-7.7 6.3,-14 14,-14z" />
+
+    <!-- Calendar top strip -->
+    <path
+        android:fillColor="#D7D9DE"
+        android:pathData="M18,14h72c7.7,0 14,6.3 14,14v12h-100v-12c0,-7.7 6.3,-14 14,-14z" />
+
+    <!-- Binding tabs -->
+    <path android:fillColor="#6C6473" android:pathData="M29,8h8v14h-8z" />
+    <path android:fillColor="#6C6473" android:pathData="M50,8h8v14h-8z" />
+    <path android:fillColor="#6C6473" android:pathData="M71,8h8v14h-8z" />
+
+    <!-- Calendar board -->
+    <path
+        android:fillColor="#231F23"
+        android:pathData="M20,44h68c2.2,0 4,1.8 4,4v39c0,2.2 -1.8,4 -4,4h-68c-2.2,0 -4,-1.8 -4,-4v-39c0,-2.2 1.8,-4 4,-4z" />
+
+    <!-- Day cells red column -->
+    <path android:fillColor="#FF4C64" android:pathData="M22,49h10v10h-10z" />
+    <path android:fillColor="#FF4C64" android:pathData="M22,63h10v10h-10z" />
+    <path android:fillColor="#FF4C64" android:pathData="M22,77h10v10h-10z" />
+
+    <!-- Blue cells -->
+    <path android:fillColor="#75B8EF" android:pathData="M36,49h10v10h-10z" />
+    <path android:fillColor="#75B8EF" android:pathData="M50,49h10v10h-10z" />
+    <path android:fillColor="#75B8EF" android:pathData="M64,49h10v10h-10z" />
+    <path android:fillColor="#75B8EF" android:pathData="M78,49h10v10h-10z" />
+
+    <path android:fillColor="#75B8EF" android:pathData="M36,63h10v10h-10z" />
+    <path android:fillColor="#75B8EF" android:pathData="M50,63h10v10h-10z" />
+    <path android:fillColor="#75B8EF" android:pathData="M64,63h10v10h-10z" />
+    <path android:fillColor="#75B8EF" android:pathData="M78,63h10v10h-10z" />
+
+    <path android:fillColor="#75B8EF" android:pathData="M36,77h10v10h-10z" />
+    <path android:fillColor="#75B8EF" android:pathData="M50,77h10v10h-10z" />
+    <path android:fillColor="#75B8EF" android:pathData="M64,77h10v10h-10z" />
+    <path android:fillColor="#75B8EF" android:pathData="M78,77h10v10h-10z" />
+
+    <!-- Check badge circle -->
+    <path
+        android:fillColor="#78B4E2"
+        android:pathData="M20,6a18,18 0 1,1 0,36a18,18 0 1,1 0,-36z" />
+    <path
+        android:fillColor="#231F23"
+        android:pathData="M20,14c-5.5,0 -10,4.5 -10,10s4.5,10 10,10s10,-4.5 10,-10s-4.5,-10 -10,-10z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M14,24l3,3l9,-9c0.8,-0.8 2.1,-0.8 2.9,0c0.8,0.8 0.8,2.1 0,2.9l-10.4,10.4c-0.8,0.8 -2.1,0.8 -2.9,0L11,26.9c-0.8,-0.8 -0.8,-2.1 0,-2.9c0.8,-0.8 2.1,-0.8 3,0z" />
+
+    <!-- Briefcase -->
+    <path
+        android:fillColor="#E0AE6C"
+        android:pathData="M54,72h40c5.5,0 10,4.5 10,10v16c0,5.5 -4.5,10 -10,10h-40c-5.5,0 -10,-4.5 -10,-10v-16c0,-5.5 4.5,-10 10,-10z" />
+    <path
+        android:fillColor="#D89C5E"
+        android:pathData="M54,72h40c5.5,0 10,4.5 10,10v6h-60v-6c0,-5.5 4.5,-10 10,-10z" />
+    <path
+        android:fillColor="#231F23"
+        android:pathData="M62,64h24c3.3,0 6,2.7 6,6v8c0,3.3 -2.7,6 -6,6h-24c-3.3,0 -6,-2.7 -6,-6v-8c0,-3.3 2.7,-6 6,-6z" />
+    <path
+        android:fillColor="#E2E8EE"
+        android:pathData="M64,66h20c2.2,0 4,1.8 4,4v4c0,2.2 -1.8,4 -4,4h-20c-2.2,0 -4,-1.8 -4,-4v-4c0,-2.2 1.8,-4 4,-4z" />
+    <path
+        android:fillColor="#231F23"
+        android:pathData="M74,85a6,6 0 1,1 0,12a6,6 0 1,1 0,-12z" />
+    <path
+        android:fillColor="#8A7D90"
+        android:pathData="M74,88a3,3 0 1,1 0,6a3,3 0 1,1 0,-6z" />
+
+</vector>

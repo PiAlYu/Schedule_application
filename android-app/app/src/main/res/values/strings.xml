@@ -1,0 +1,5 @@
+﻿<resources>
+    <string name="app_name">Schedule Application</string>
+    <string name="notification_channel_name">Schedule Notifications</string>
+    <string name="notification_channel_description">Reminders before lessons</string>
+</resources>
