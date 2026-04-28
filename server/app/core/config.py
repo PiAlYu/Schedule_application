@@ -26,9 +26,15 @@ class Settings(BaseSettings):
         if not normalized:
             return "sqlite:///./schedule.db"
 
-        # Some providers expose postgres:// while SQLAlchemy expects postgresql://
+        # Keep explicitly selected SQLAlchemy dialects as-is.
+        if normalized.startswith("postgresql+"):
+            return normalized
+
+        # Use psycopg (v3) for PostgreSQL URLs.
         if normalized.startswith("postgres://"):
-            return "postgresql://" + normalized[len("postgres://"):]
+            return "postgresql+psycopg://" + normalized[len("postgres://") :]
+        if normalized.startswith("postgresql://"):
+            return "postgresql+psycopg://" + normalized[len("postgresql://") :]
 
         return normalized
 
