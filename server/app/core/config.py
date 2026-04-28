@@ -1,4 +1,5 @@
-﻿from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic import field_validator
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
@@ -14,6 +15,22 @@ class Settings(BaseSettings):
     superuser_password: str = "admin12345"
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
+
+    @field_validator("database_url", mode="before")
+    @classmethod
+    def normalize_database_url(cls, value: str | None) -> str:
+        if value is None:
+            return "sqlite:///./schedule.db"
+
+        normalized = value.strip()
+        if not normalized:
+            return "sqlite:///./schedule.db"
+
+        # Some providers expose postgres:// while SQLAlchemy expects postgresql://
+        if normalized.startswith("postgres://"):
+            return "postgresql://" + normalized[len("postgres://"):]
+
+        return normalized
 
 
 settings = Settings()
